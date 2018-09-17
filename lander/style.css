@@ -1,0 +1,10 @@
+/*
+  Theme Name: Lander page for Simone
+  Template: simone
+  Description: A child theme of simone that builds a one page style front page
+  Author: Maarten von Kreijfelt
+  Version: 1.o.o
+  */
+@charset "UTF-8";
+/* CSS Document */
+@import url("../simone/style.css");

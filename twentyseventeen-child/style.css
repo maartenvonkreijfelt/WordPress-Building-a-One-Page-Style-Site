@@ -1,0 +1,10 @@
+/*
+  Theme Name: child theme of twentyseventeen
+  Template: twentyseventeen
+  Description: A child theme of twentyseventeen that builds a one page style front page
+  Author: Maarten von Kreijfelt
+  Version: 1.0.0
+  */
+@charset "UTF-8";
+/* CSS Document */
+@import url("../twentyseventeen/style.css");
