@@ -15,7 +15,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<div>Hi There: I am the front-page.php template file.</div>
+
 
 	</main><!-- #main -->
 </div><!-- #primary -->
