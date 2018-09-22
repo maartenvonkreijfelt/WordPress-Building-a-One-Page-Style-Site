@@ -15,22 +15,30 @@ get_header(); ?>
  
   
 <section id="call-to-action">
-  Call to Action
+    <div class="indent">
+        Call to Action
+    </div>
 </section><!-- #call-to-action -->
   
   
 <section id="services">
+    <div class="indent">
   Services
+    </div>
 </section><!-- #services -->
 
 
 <section id="meet">
+    <div class="indent">
   Meet
+    </div>
 </section><!-- #meet -->
 
 
 </section><!-- #contact -->
+    <div class="indent">
   Contact
+    </div>
 </section><!-- #contact -->
 
 </main><!-- #main -->
