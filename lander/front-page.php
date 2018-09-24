@@ -15,30 +15,88 @@ get_header(); ?>
  
   
 <section id="call-to-action">
-    <div class="indent">
-        Call to Action
-    </div>
+	<div class="indent clear">
+			<?php 
+			$query = new WP_Query( 'pagename=book-an-appointment' );
+			// The Loop
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) {
+					$query->the_post();
+					echo '<div class="entry-content">';
+					the_content();
+					echo '</div>';
+				}
+			}
+			
+			/* Restore original Post Data */
+			wp_reset_postdata();
+			?>
+	</div><!-- .indent -->
 </section><!-- #call-to-action -->
-  
-  
+
+
 <section id="services">
-    <div class="indent">
-  Services
-    </div>
+	<div class="indent clear">
+		<?php 
+		$query = new WP_Query( 'pagename=services' );
+
+		// The Loop
+		if ( $query->have_posts() ) {
+			while ( $query->have_posts() ) {
+				$query->the_post();
+				echo '<h2 class="section-title">' . get_the_title() . '</h2>';
+				echo '<div class="entry-content">';
+				the_content('');
+				echo '</div>';
+			}
+		}
+
+		/* Restore original Post Data */
+		wp_reset_postdata();
+		?>
+	</div><!-- .indent -->
 </section><!-- #services -->
 
-
 <section id="meet">
-    <div class="indent">
-  Meet
-    </div>
+	<div class="indent clear">
+		<?php 
+		$query = new WP_Query( 'pagename=meet-dr-anthony-britton' );
+		// The Loop
+		if ( $query->have_posts() ) {
+			while ( $query->have_posts() ) {
+				$query->the_post();
+				echo '<h2 class="section-title">' . get_the_title() . '</h2>';
+				echo '<div class="entry-content">';
+				the_content();
+				echo '</div>';
+			}
+		}
+
+		/* Restore original Post Data */
+		wp_reset_postdata();
+		?>
+	</div><!-- .indent -->
 </section><!-- #meet -->
 
+<section id="contact">
+	<div class="indent clear">
+		<?php 
+		$query = new WP_Query( 'pagename=contact' );
+		// The Loop
+		if ( $query->have_posts() ) {
+			while ( $query->have_posts() ) {
+				$query->the_post();
+				echo '<h2 class="section-title">' . get_the_title() . '</h2>';
+				echo '<div class="entry-content">';
+				the_content();
+				echo '</div>';
+			}
+		}
 
-</section><!-- #contact -->
-    <div class="indent">
-  Contact
-    </div>
+		/* Restore original Post Data */
+		wp_reset_postdata();
+		?>
+	</div><!-- .indent -->
 </section><!-- #contact -->
 
 </main><!-- #main -->
