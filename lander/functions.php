@@ -20,3 +20,7 @@ function exclude_testimonials( $query ) {
     }
 }
 add_action( 'pre_get_posts', 'exclude_testimonials' );
+
+
+
+wp_enqueue_script( 'lander-scripts', get_stylesheet_directory_uri() . '/js/landerscripts.js', array('jquery'), '20140602', false);
